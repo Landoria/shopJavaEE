@@ -7,6 +7,6 @@
 <title>Page d'accueil</title>
 </head>
 <body>
-	
+	<div>Quelle belle page d'accueil</div>
 </body>
 </html>
