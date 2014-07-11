@@ -206,7 +206,7 @@ public class CreationClientForm {
                 DateTime dt = new DateTime();
                 DateTimeFormatter fmt = DateTimeFormat.forPattern( FORMAT_DATE );
                 String date = fmt.print( dt );
-                nomFichier = nomFichier + "_" + date;
+                nomFichier = date + "_" + nomFichier;
                 /*
                  * Antibug pour Internet Explorer, qui transmet pour une raison
                  * mystique le chemin du fichier local à la machine du client...
