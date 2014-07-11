@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+/* Général -------------------------------------------------------------------------- */
+body {
+	font-family:Arial;
+}
+
+/* Table -------------------------------------------------------------------------- */
+.table {
+	text-align:center;
+}
+
+/* Menu -------------------------------------------------------------------------- */
+#menu {
+	margin-bottom: 20px;
+}
+/* Icons et images -------------------------------------------------------------------------- */
+img.photo-thumbnail{
+	width: 40px;
+}
+
+/* Liens -------------------------------------------------------------------------- */
+a:link {
+ text-decoration:none;
+}
+a:visited {
+ font-style:italic; text-decoration:none
+}
+a:active {
+ font-weight:bold; text-decoration:none
+}
+a:hover {
+ text-decoration:underline
+}
+/*sizes---------------------------------------------------------------------------------------*/
+
+.smaller{
+	font-size:12px;
+}
+
+/* Styles et couleurs -------------------------------------------------------------------------- */
+.requis {
+    color: #c00;
+}
+
+.erreur {
+    color: #900;
+}
+
+.succes {
+    color: #090;
+}
+
+.info {
+    color: #E8A22B;
+    font-weight:bold;
+}
+
+.light{
+	background-color:#aab1b0;
+	border: 1px, solid, #7f7ea8;
+
+	
