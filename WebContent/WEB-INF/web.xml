@@ -30,17 +30,17 @@
   <filter>
         <filter-name>PrechargementFilter</filter-name>
         <filter-class>fr.commerce.filters.PrechargementFilter</filter-class>
-    </filter>
-    <filter-mapping>
+  </filter>
+  <filter-mapping>
         <filter-name>PrechargementFilter</filter-name>
         <url-pattern>/*</url-pattern>
-    </filter-mapping>
+   </filter-mapping>
   
   <servlet>
     <servlet-name>first.jsp</servlet-name>
     <jsp-file>/WEB-INF//first.jsp</jsp-file>
   </servlet>
-    <servlet-mapping>
+  <servlet-mapping>
     <servlet-name>first.jsp</servlet-name>
     <url-pattern>/first</url-pattern>
   </servlet-mapping>
