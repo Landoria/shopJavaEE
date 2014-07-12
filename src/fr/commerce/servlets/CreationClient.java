@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +18,8 @@ import fr.commerce.dao.ClientDao;
 import fr.commerce.dao.DAOFactory;
 import fr.commerce.forms.CreationClientForm;
 
+@WebServlet( urlPatterns = "/creationClient", initParams = @WebInitParam( name = "chemin", value = "/workspace/app_files/" ) )
+@MultipartConfig( location = "s:/workspace/tmp", maxFileSize = 1048576, maxRequestSize = 52428800, fileSizeThreshold = 1048576 )
 public class CreationClient extends HttpServlet {
     public static final String CONF_DAO_FACTORY = "daofactory";
     public static final String CHEMIN           = "chemin";

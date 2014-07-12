@@ -11,7 +11,6 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -24,7 +23,6 @@ import fr.commerce.dao.DAOFactory;
 /**
  * Servlet Filter implementation class PrechargementFilter
  */
-@WebFilter
 public class PrechargementFilter implements Filter {
     public static final String CONF_DAO_FACTORY      = "daofactory";
     public static final String ATT_SESSION_CLIENTS   = "clients";
