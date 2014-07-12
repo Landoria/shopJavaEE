@@ -9,9 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
- <listener>
-    <listener-class>fr.commerce.config.InitialisationDaoFactory</listener-class>
-</listener> 
+
   <filter>
     <filter-name>Set Character Encoding</filter-name>
     <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
@@ -29,10 +27,6 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   
-  <filter>
-        <filter-name>PrechargementFilter</filter-name>
-        <filter-class>fr.commerce.filters.PrechargementFilter</filter-class>
-    </filter>
     <filter-mapping>
         <filter-name>PrechargementFilter</filter-name>
         <url-pattern>/*</url-pattern>

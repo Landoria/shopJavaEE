@@ -24,7 +24,7 @@ import fr.commerce.dao.DAOFactory;
 /**
  * Servlet Filter implementation class PrechargementFilter
  */
-@WebFilter( "/PrechargementFilter" )
+@WebFilter
 public class PrechargementFilter implements Filter {
     public static final String CONF_DAO_FACTORY      = "daofactory";
     public static final String ATT_SESSION_CLIENTS   = "clients";
