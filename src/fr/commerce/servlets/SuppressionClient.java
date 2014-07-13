@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,7 @@ import fr.commerce.dao.ClientDao;
 import fr.commerce.dao.DAOException;
 import fr.commerce.dao.DAOFactory;
 
+@WebServlet( "/suppressionClient" )
 public class SuppressionClient extends HttpServlet {
     public static final String CONF_DAO_FACTORY = "daofactory";
     public static final String PARAM_ID_CLIENT  = "idClient";

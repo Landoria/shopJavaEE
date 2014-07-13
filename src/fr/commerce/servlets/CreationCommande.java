@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +18,7 @@ import fr.commerce.dao.CommandeDao;
 import fr.commerce.dao.DAOFactory;
 import fr.commerce.forms.CreationCommandeForm;
 
+@WebServlet( "/creationCommande" )
 public class CreationCommande extends HttpServlet {
     public static final String CONF_DAO_FACTORY      = "daofactory";
     public static final String ATT_COMMANDE          = "commande";

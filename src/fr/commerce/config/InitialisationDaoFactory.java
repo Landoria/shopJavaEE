@@ -3,9 +3,11 @@ package fr.commerce.config;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 import fr.commerce.dao.DAOFactory;
 
+@WebListener
 public class InitialisationDaoFactory implements ServletContextListener {
     private static final String ATT_DAO_FACTORY = "daofactory";
 

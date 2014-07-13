@@ -9,9 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
- <listener>
-    <listener-class>fr.commerce.config.InitialisationDaoFactory</listener-class>
-</listener> 
+
   <filter>
     <filter-name>Set Character Encoding</filter-name>
     <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
@@ -32,80 +30,21 @@
   <filter>
         <filter-name>PrechargementFilter</filter-name>
         <filter-class>fr.commerce.filters.PrechargementFilter</filter-class>
-    </filter>
-    <filter-mapping>
+  </filter>
+  <filter-mapping>
         <filter-name>PrechargementFilter</filter-name>
         <url-pattern>/*</url-pattern>
-    </filter-mapping>
+   </filter-mapping>
   
   <servlet>
     <servlet-name>first.jsp</servlet-name>
     <jsp-file>/WEB-INF//first.jsp</jsp-file>
   </servlet>
-  <servlet>
-    <servlet-name>CreationClient</servlet-name>
-    <servlet-class>fr.commerce.servlets.CreationClient</servlet-class>
-    <init-param>
-      <param-name>chemin</param-name>
-      <param-value>/workspace/app_files/</param-value>
-    </init-param>
-    <multipart-config>
-      <location>S:\workspace\tmp\</location>
-      <max-file-size>1048576</max-file-size>
-      <max-request-size>52428800</max-request-size>
-      <file-size-threshold>1048576</file-size-threshold>
-    </multipart-config>
-  </servlet>
-  <servlet>
-    <servlet-name>CreationCommande</servlet-name>
-    <servlet-class>fr.commerce.servlets.CreationCommande</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>ListeClients</servlet-name>
-    <servlet-class>fr.commerce.servlets.ListeClients</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>ListeCommandes</servlet-name>
-    <servlet-class>fr.commerce.servlets.ListeCommandes</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>SuppressionClient</servlet-name>
-    <servlet-class>fr.commerce.servlets.SuppressionClient</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>SuppressionCommande</servlet-name>
-    <servlet-class>fr.commerce.servlets.SuppressionCommande</servlet-class>
-  </servlet>
-
   <servlet-mapping>
     <servlet-name>first.jsp</servlet-name>
     <url-pattern>/first</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>CreationClient</servlet-name>
-    <url-pattern>/creationClient</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>CreationCommande</servlet-name>
-    <url-pattern>/creationCommande</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ListeClients</servlet-name>
-    <url-pattern>/listeClients</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ListeCommandes</servlet-name>
-    <url-pattern>/listeCommandes</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>SuppressionClient</servlet-name>
-    <url-pattern>/suppressionClient</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>SuppressionCommande</servlet-name>
-    <url-pattern>/suppressionCommande</url-pattern>
-  </servlet-mapping>
-
+  
   <jsp-config>
     <jsp-property-group>
       <url-pattern>*.jsp</url-pattern>
